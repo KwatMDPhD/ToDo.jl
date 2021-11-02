@@ -1,0 +1,7 @@
+name = "TensorFunction"
+uuid = "7b8185a8-3a2a-4818-8ce3-c04382ef042b"
+authors = ["KwatMDPhD <kwat.me@icloud.com>"]
+version = "0.1.0"
+
+[deps]
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
