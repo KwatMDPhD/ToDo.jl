@@ -1,6 +1,6 @@
 # TensorFunction.jl
 
-Apply function on tensors :magic_wand:
+Apply functions on tensors :magic_wand:
 
 ---
 

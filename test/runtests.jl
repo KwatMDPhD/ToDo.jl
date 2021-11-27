@@ -25,9 +25,9 @@ n_on = n_co - n_ze
 
 bi_ = convert(BitVector, [zeros(n_ze); ones(n_on)])
 
-ve = convert(Vector{Float64}, [10^(id - 1) for id in 1:n_co])
+ve = convert(Vector{Float64}, [10^(id - 1) for id = 1:n_co])
 
-ma = convert(Matrix{Float64}, reshape(1:(n_ro * n_co), (n_ro, n_co)))
+ma = convert(Matrix{Float64}, reshape(1:n_ro*n_co, (n_ro, n_co)))
 
 apply(bi_, ve, .*)
 
