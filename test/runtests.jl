@@ -29,13 +29,13 @@ ve = convert(Vector{Float64}, [10^(id - 1) for id in 1:n_co])
 
 ma = convert(Matrix{Float64}, reshape(1:(n_ro * n_co), (n_ro, n_co)))
 
-apply(bi_, ve, .*)
+TensorFunction.apply(bi_, ve, .*)
 
-apply(ve, ma, .*)
+TensorFunction.apply(ve, ma, .*)
 
-apply(bi_, ma, .*)
+TensorFunction.apply(bi_, ma, .*)
 
-apply(ma, ma, (ro1, ro2) -> minimum([ro1; ro2]))
+TensorFunction.apply(ma, ma, (ro1, ro2) -> minimum([ro1; ro2]))
 
 rm(TE; recursive = true)
 

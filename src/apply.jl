@@ -29,5 +29,3 @@ function apply(
     return [fu(ro1, ro2) for ro1 in eachrow(ma1), ro2 in eachrow(ma2)]
 
 end
-
-export apply
