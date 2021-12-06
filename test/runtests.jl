@@ -1,4 +1,4 @@
-TE = joinpath(homedir(), "Downloads", "TensorFunction.test", "")
+TE = joinpath(tempdir(), "TensorFunction.test", "")
 
 if isdir(TE)
 
@@ -8,7 +8,7 @@ end
 
 mkdir(TE)
 
-println("Made ", TE, ".")
+println("Made ", TE)
 
 using Revise
 using BenchmarkTools
@@ -39,4 +39,4 @@ TensorFunction.apply(ma, ma, (ro1, ro2) -> minimum([ro1; ro2]))
 
 rm(TE; recursive = true)
 
-println("Removed ", TE, ".")
+println("Removed ", TE)
